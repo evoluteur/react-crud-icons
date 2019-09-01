@@ -1,0 +1,144 @@
+/*
+    React-CRUD-Icons
+    https://github.com/evoluteur/react-crud-icons
+*/
+
+.crud-icon {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  &.disabled{
+    cursor: default;
+  }
+  >svg{
+    position: relative;
+    top: -1px;
+  }
+  > div{
+    z-index: 300;
+    display: none;
+    position: absolute;
+    padding: 4px 7px 3px;
+    top: 34px;
+    left: 0;
+    color: white;
+    background-color: grey;
+    display: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-style: normal;
+  }
+  &:hover{
+    transition: background-color .5s;
+    transition-delay: .1s;
+    > div{
+      display: block;
+    }
+  }
+  &.dark{
+    &.disabled{
+      > svg {
+        fill: silver;
+      }
+    }
+    > svg {
+      fill: #fafafa;
+    }
+    &:hover:not(.disabled){
+      background-color: #616161; // #424242;
+      > svg {
+        fill: white;
+      }
+    }
+  }
+  &.light{
+    &.disabled{
+      > svg {
+        fill: silver;
+      }
+    }
+    > svg {
+      fill: #424242;
+    }
+    &:hover:not(.disabled){
+      background-color: #eeeeee;
+      > svg {
+        fill: black;
+      }
+      > div{
+        display: block;
+      }
+    }
+  }
+  &.tiny{
+    height: 28px;
+    width: 28px;
+    padding: 8px;
+    > svg{
+      height: 12px;
+      width: 12px;
+      top: -4px;
+    }
+    >div{
+      top: 30px;
+    }
+  } 
+  &.small{
+    height: 38px;
+    width: 38px;
+    > svg{
+      height: 18px;
+      width: 18px;
+    }
+    >div{
+      top: 40px;
+    }
+  } 
+  &.medium{
+    height: 46px;
+    width: 46px;
+    > svg{
+      height: 26px;
+      width: 26px;
+    }
+    >div{
+      top: 46px;
+    }
+  }
+  &.large{
+    height: 62px;
+    width: 62px;
+    > svg{
+      height: 42px;
+      width: 42px;
+    }
+    >div{
+      top: 60px;
+    }
+  }
+  &.big{
+    height: 100px;
+    width: 100px;
+    > svg{
+      height: 80px;
+      width: 80px;
+    }
+    >div{
+      top: 94px;
+    }
+  }
+  &.huge{
+    height: 140px;
+    width: 140px;
+    > svg{
+      height: 120px;
+      width: 120px;
+    }
+    >div{
+      top: 138px;
+      left:10px;
+    }
+  }
+}

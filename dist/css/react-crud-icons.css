@@ -1,0 +1,102 @@
+/*
+    React-CRUD-Icons
+    https://github.com/evoluteur/react-crud-icons
+*/
+.crud-icon {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer; }
+  .crud-icon.disabled {
+    cursor: default; }
+  .crud-icon > svg {
+    position: relative;
+    top: -1px; }
+  .crud-icon > div {
+    z-index: 300;
+    display: none;
+    position: absolute;
+    padding: 4px 7px 3px;
+    top: 34px;
+    left: 0;
+    color: white;
+    background-color: grey;
+    display: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-style: normal; }
+  .crud-icon:hover {
+    transition: background-color .5s;
+    transition-delay: .1s; }
+    .crud-icon:hover > div {
+      display: block; }
+  .crud-icon.dark.disabled > svg {
+    fill: silver; }
+  .crud-icon.dark > svg {
+    fill: #fafafa; }
+  .crud-icon.dark:hover:not(.disabled) {
+    background-color: #616161; }
+    .crud-icon.dark:hover:not(.disabled) > svg {
+      fill: white; }
+  .crud-icon.light.disabled > svg {
+    fill: silver; }
+  .crud-icon.light > svg {
+    fill: #424242; }
+  .crud-icon.light:hover:not(.disabled) {
+    background-color: #eeeeee; }
+    .crud-icon.light:hover:not(.disabled) > svg {
+      fill: black; }
+    .crud-icon.light:hover:not(.disabled) > div {
+      display: block; }
+  .crud-icon.tiny {
+    height: 28px;
+    width: 28px;
+    padding: 8px; }
+    .crud-icon.tiny > svg {
+      height: 12px;
+      width: 12px;
+      top: -4px; }
+    .crud-icon.tiny > div {
+      top: 30px; }
+  .crud-icon.small {
+    height: 38px;
+    width: 38px; }
+    .crud-icon.small > svg {
+      height: 18px;
+      width: 18px; }
+    .crud-icon.small > div {
+      top: 40px; }
+  .crud-icon.medium {
+    height: 46px;
+    width: 46px; }
+    .crud-icon.medium > svg {
+      height: 26px;
+      width: 26px; }
+    .crud-icon.medium > div {
+      top: 46px; }
+  .crud-icon.large {
+    height: 62px;
+    width: 62px; }
+    .crud-icon.large > svg {
+      height: 42px;
+      width: 42px; }
+    .crud-icon.large > div {
+      top: 60px; }
+  .crud-icon.big {
+    height: 100px;
+    width: 100px; }
+    .crud-icon.big > svg {
+      height: 80px;
+      width: 80px; }
+    .crud-icon.big > div {
+      top: 94px; }
+  .crud-icon.huge {
+    height: 140px;
+    width: 140px; }
+    .crud-icon.huge > svg {
+      height: 120px;
+      width: 120px; }
+    .crud-icon.huge > div {
+      top: 138px;
+      left: 10px; }
