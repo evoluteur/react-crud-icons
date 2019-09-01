@@ -112,6 +112,6 @@ Icon.propTypes = {
 };
 Icon.defaultProps = {
   size: 'medium',
-  theme: 'dark',
+  theme: 'light',
   disabled: false
 };
