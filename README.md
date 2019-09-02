@@ -1,4 +1,4 @@
-# React-CRUD-Icons &middot; [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/evoluteur/react-crud-icon/blob/master/LICENSE.md) [![npm version](https://img.shields.io/npm/v/react-crud-icon)](https://www.npmjs.com/package/react-crud-icon) 
+# React-CRUD-Icons &middot; [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/evoluteur/react-crud-icons/blob/master/LICENSE.md) [![npm version](https://img.shields.io/npm/v/react-crud-icons)](https://www.npmjs.com/package/react-crud-icons) 
 
 
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps. 
