@@ -61,7 +61,7 @@ class Example extends React.Component {
 
 Copyright (c) 2019 [Olivier Giulieri](https://evoluteur.github.io/).
 
-react-crud-icons is released under the [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE.md).
+react-crud-icons is released under the [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
 
 To suggest a feature or report a bug: [https://github.com/evoluteur/react-crud-icons/issues](https://github.com/evoluteur/react-crud-icons/issues)
  
