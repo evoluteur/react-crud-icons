@@ -1,7 +1,7 @@
 {
   "name": "react-crud-icons",
-  "version": "0.0.2",
-  "description": "SVG iconset for CRUD applications",
+  "version": "0.0.3",
+  "description": "SVG iconset for CRUD applications packaged as a React component",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/react-crud-icons.git"
@@ -32,6 +32,7 @@
   "keywords": [
     "SVG",
     "icon",
+    "iconset",
     "React",
     "component",
     "CRUD",
