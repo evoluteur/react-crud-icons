@@ -7,6 +7,7 @@
   display: inline-block;
   padding: 10px;
   border-radius: 50%;
+  box-sizing: border-box;
   cursor: pointer; }
   .crud-icon.disabled {
     cursor: default; }
