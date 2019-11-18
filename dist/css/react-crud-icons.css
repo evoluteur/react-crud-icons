@@ -26,7 +26,8 @@
     display: none;
     border-radius: 3px;
     font-size: 12px;
-    font-style: normal; }
+    font-style: normal;
+    opacity: 90%; }
   .crud-icon:hover {
     transition: background-color .5s;
     transition-delay: .1s; }
