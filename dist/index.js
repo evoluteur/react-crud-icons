@@ -13,10 +13,20 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 /*
-     React-CRUD-Icons
-      Minimal set of SVG icons for CRUD apps, packaged as a React component for Web UI.
-      https://github.com/evoluteur/react-crud-icons
-     (c) 2019 Olivier Giulieri
+  ___             _   
+ | _ \___ __ _ __| |_ 
+ |   / -_) _` / _|  _|
+ |_|_\___\__,_\__|\__|
+  / __| _ \ | | |   \ 
+ | (__|   / |_| | |) |
+(_)___|_|_\\___/|___/ 
+| / _/ _ \ ' \(_-<
+|_\__\___/_||_/__/
+  React-CRUD-Icons
+  Minimal set of SVG icons for CRUD apps, packaged as a React component for Web UI.
+  https://github.com/evoluteur/react-crud-icons
+ (c) 2019 Olivier Giulieri
+ 
 */
 //import './Icon.scss'
 // The SVG icons are hand-picked among thousands from https://materialdesignicons.com/
@@ -28,10 +38,13 @@ var svgPaths = {
   "delete": 'M9,3V4H4V6H5V19C5,20.1 5.9,21 7,21H17C18.1,21 19,20.1 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z',
   save: 'M5,3C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5.5L18.5,3H17V9C17,9.55 16.55,10 16,10H8C7.45,10 7,9.55 7,9V3H5M12,4V9H15V4H12M7,12H17C17.55,12 18,12.45 18,13V19H6V13C6,12.45 6.45,12 7,12Z',
   add: 'M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2Z',
+  add2: 'M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z',
   remove: 'M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z',
   search: 'M9.5,3C13.09,3 16,5.91 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16C5.91,16 3,13.09 3,9.5C3,5.91 5.91,3 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z',
   filter: 'M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z',
   list: 'M3,4H21V8H3V4M3,10H21V14H3V10M3,16H21V20H3V16Z',
+  //list4: 'M3,15H21V13H3V15M3,19H21V17H3V19M3,11H21V9H3V11M3,5V7H21V5H3Z',
+  //cols: 'M4,21V3H8V21H4M10,21V3H14V21H10M16,21V3H20V21H16Z',
   cards: 'M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3',
   dashboard: 'M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z',
   pie: 'M11,2V22C5.9,21.5 2,17.2 2,12C2,6.8 5.9,2.5 11,2M13,2V11H22C21.5,6.2 17.8,2.5 13,2M13,13V22C17.7,21.5 21.5,17.8 22,13H13Z',
@@ -71,6 +84,17 @@ var svgPaths = {
 var keys = Object.keys(svgPaths);
 exports.keys = keys;
 
+var svgCmp = function svgCmp(path) {
+  return _react["default"].createElement("svg", {
+    focusable: "false",
+    viewBox: "0 0 24 24",
+    "aria-hidden": "true",
+    role: "presentation"
+  }, _react["default"].createElement("path", {
+    d: path
+  }));
+};
+
 function Icon(args) {
   var id = args.id,
       name = args.name,
@@ -80,28 +104,25 @@ function Icon(args) {
       disabled = args.disabled,
       onClick = args.onClick;
   var path = svgPaths[name] || null;
-  var css = "crud-icon " + size + ' ' + theme + (!!disabled ? ' disabled' : '');
 
   if (!path) {
     console.error('Invalid icon name "' + name + '".');
   }
 
-  return _react["default"].createElement("i", {
-    "data-id": id || name,
-    className: css,
-    onClick: onClick ? onClick : null
-  }, _react["default"].createElement("svg", {
-    focusable: "false",
-    viewBox: "0 0 24 24",
-    "aria-hidden": "true",
-    role: "presentation"
-  }, _react["default"].createElement("path", {
-    d: path
-  })), tooltip ? _react["default"].createElement("div", null, tooltip) : null);
+  if (theme === 'none') {
+    return svgCmp(path);
+  } else {
+    var css = "crud-icon " + size + ' ' + args.className + ' ' + theme + (!!disabled ? ' disabled' : '');
+    return _react["default"].createElement("i", {
+      "data-id": id || name,
+      className: css,
+      onClick: onClick ? onClick : null
+    }, svgCmp(path), tooltip ? _react["default"].createElement("div", null, tooltip) : null);
+  }
 }
 
 Icon.propTypes = {
-  //name: PropTypes.anyOf(["account", "add", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
+  //name: PropTypes.anyOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
   name: _propTypes["default"].string.isRequired,
   size: _propTypes["default"].string,
   theme: _propTypes["default"].string,

@@ -1,6 +1,7 @@
 /*
     React-CRUD-Icons
     https://github.com/evoluteur/react-crud-icons
+    (c) 2019 Olivier Giulieri
 */
 .crud-icon {
   position: relative;
@@ -17,6 +18,7 @@
   .crud-icon > div {
     z-index: 300;
     display: none;
+    opacity: 0;
     position: absolute;
     padding: 4px 7px 3px;
     top: 34px;
@@ -26,13 +28,11 @@
     display: none;
     border-radius: 3px;
     font-size: 12px;
-    font-style: normal;
-    opacity: 90%; }
-  .crud-icon:hover {
-    transition: background-color .5s;
-    transition-delay: .1s; }
-    .crud-icon:hover > div {
-      display: block; }
+    font-style: normal; }
+  .crud-icon:hover > div {
+    opacity: 1;
+    transition: opacity 1s linear 1s;
+    display: block; }
   .crud-icon.dark.disabled > svg {
     fill: silver; }
   .crud-icon.dark > svg {

@@ -1,6 +1,7 @@
 /*
     React-CRUD-Icons
     https://github.com/evoluteur/react-crud-icons
+    (c) 2019 Olivier Giulieri
 */
 
 .crud-icon {
@@ -20,6 +21,7 @@
   > div{
     z-index: 300;
     display: none;
+    opacity: 0;
     position: absolute;
     padding: 4px 7px 3px;
     top: 34px;
@@ -30,12 +32,11 @@
     border-radius: 3px;
     font-size: 12px;
     font-style: normal;
-    opacity: 90%;
   }
   &:hover{
-    transition: background-color .5s;
-    transition-delay: .1s;
     > div{
+      opacity: 1;
+      transition: opacity 1s linear 1s;
       display: block;
     }
   }
@@ -74,13 +75,15 @@
       }
     }
   }
+  @mixin square($heightAndWidth) {
+    height: $heightAndWidth;
+    width: $heightAndWidth;
+  }
   &.tiny{
-    height: 28px;
-    width: 28px;
+    @include square(28px);
     padding: 8px;
     > svg{
-      height: 12px;
-      width: 12px;
+      @include square(12px);
       top: -4px;
     }
     >div{
@@ -88,59 +91,49 @@
     }
   } 
   &.small{
-    height: 38px;
-    width: 38px;
+    @include square(38px);
     > svg{
-      height: 18px;
-      width: 18px;
+      @include square(18px);
     }
     >div{
       top: 40px;
     }
   } 
   &.medium{
-    height: 46px;
-    width: 46px;
+    @include square(46px);
     > svg{
-      height: 26px;
-      width: 26px;
+      @include square(26px);
     }
     >div{
       top: 46px;
     }
   }
   &.large{
-    height: 62px;
-    width: 62px;
+    @include square(62px);
     > svg{
-      height: 42px;
-      width: 42px;
+      @include square(42px);
     }
     >div{
       top: 60px;
     }
   }
   &.big{
-    height: 100px;
-    width: 100px;
+    @include square(100px);
     > svg{
-      height: 80px;
-      width: 80px;
+      @include square(80px);
     }
     >div{
       top: 94px;
     }
   }
   &.huge{
-    height: 140px;
-    width: 140px;
+    @include square(140px);
     > svg{
-      height: 120px;
-      width: 120px;
+      @include square(120px);
     }
     >div{
       top: 138px;
-      left:10px;
+      left: 10px;
     }
   }
 }

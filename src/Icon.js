@@ -1,10 +1,21 @@
  /*
-      React-CRUD-Icons
+   ___             _   
+  | _ \___ __ _ __| |_ 
+  |   / -_) _` / _|  _|
+  |_|_\___\__,_\__|\__|
+   / __| _ \ | | |   \ 
+  | (__|   / |_| | |) |
+ (_)___|_|_\\___/|___/ 
+ | / _/ _ \ ' \(_-<
+ |_\__\___/_||_/__/
 
-      Minimal set of SVG icons for CRUD apps, packaged as a React component for Web UI.
+  React-CRUD-Icons
 
-      https://github.com/evoluteur/react-crud-icons
-      (c) 2019 Olivier Giulieri
+  Minimal set of SVG icons for CRUD apps, packaged as a React component for Web UI.
+
+  https://github.com/evoluteur/react-crud-icons
+  (c) 2019 Olivier Giulieri
+  
 */
 
 import React from 'react'
@@ -22,6 +33,7 @@ const svgPaths = {
   "delete": 'M9,3V4H4V6H5V19C5,20.1 5.9,21 7,21H17C18.1,21 19,20.1 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z',
   save: 'M5,3C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5.5L18.5,3H17V9C17,9.55 16.55,10 16,10H8C7.45,10 7,9.55 7,9V3H5M12,4V9H15V4H12M7,12H17C17.55,12 18,12.45 18,13V19H6V13C6,12.45 6.45,12 7,12Z',
   add: 'M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2Z',
+  add2: 'M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z',
   remove: 'M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z',
   search: 'M9.5,3C13.09,3 16,5.91 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16C5.91,16 3,13.09 3,9.5C3,5.91 5.91,3 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z',
   filter: 'M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z',
@@ -74,26 +86,32 @@ const svgPaths = {
 
 export const keys = Object.keys(svgPaths)
 
+const svgCmp = path => <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+      <path d={ path }></path>
+    </svg>
+
 export default function Icon(args) {
   const {id, name, size, theme, tooltip, disabled, onClick} = args
   const path = svgPaths[name] || null
-  const css = "crud-icon "+size+' '+theme+(!!disabled ? ' disabled' : '')
 
   if(!path){
     console.error('Invalid icon name "'+name+'".')
   }
-  return <i data-id={ id || name } className={css} onClick={onClick ? onClick : null}>
-      <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
-        <path d={ path }></path>
-      </svg>
-      {tooltip ? (
-        <div>{ tooltip }</div>
-      ) : null}
-    </i>
+  if(theme==='none'){
+    return svgCmp(path)
+  }else{
+    const css = "crud-icon "+size+' '+args.className+' '+theme+(!!disabled ? ' disabled' : '')
+    return <i data-id={ id || name } className={css} onClick={onClick ? onClick : null}>
+        { svgCmp(path) }
+        {tooltip ? (
+          <div>{ tooltip }</div>
+        ) : null}
+      </i>
+  }
 }
 
 Icon.propTypes = {
-	//name: PropTypes.anyOf(["account", "add", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
+	//name: PropTypes.anyOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
   name: PropTypes.string.isRequired,
   size: PropTypes.string,
   theme: PropTypes.string, // 'light' or 'dark'
