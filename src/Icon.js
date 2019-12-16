@@ -86,7 +86,8 @@ const svgPaths = {
 
 export const keys = Object.keys(svgPaths)
 
-const svgCmp = path => <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+const svgCmp = (path, onClick) => <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"
+  onClick={onClick ? onClick : null}>
       <path d={ path }></path>
     </svg>
 
@@ -98,7 +99,7 @@ export default function Icon(args) {
     console.error('Invalid icon name "'+name+'".')
   }
   if(theme==='none'){
-    return svgCmp(path)
+    return svgCmp(path, onClick)
   }else{
     const css = "crud-icon "+size+' '+args.className+' '+theme+(!!disabled ? ' disabled' : '')
     return <i data-id={ id || name } className={css} onClick={onClick ? onClick : null}>

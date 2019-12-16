@@ -84,12 +84,13 @@ var svgPaths = {
 var keys = Object.keys(svgPaths);
 exports.keys = keys;
 
-var svgCmp = function svgCmp(path) {
+var svgCmp = function svgCmp(path, onClick) {
   return _react["default"].createElement("svg", {
     focusable: "false",
     viewBox: "0 0 24 24",
     "aria-hidden": "true",
-    role: "presentation"
+    role: "presentation",
+    onClick: onClick ? onClick : null
   }, _react["default"].createElement("path", {
     d: path
   }));
@@ -110,7 +111,7 @@ function Icon(args) {
   }
 
   if (theme === 'none') {
-    return svgCmp(path);
+    return svgCmp(path, onClick);
   } else {
     var css = "crud-icon " + size + ' ' + args.className + ' ' + theme + (!!disabled ? ' disabled' : '');
     return _react["default"].createElement("i", {

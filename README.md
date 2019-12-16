@@ -55,6 +55,7 @@ class Example extends React.Component {
         tooltip = "Edit"
         theme = "light"
         size = "medium"
+        onClick = { doSomething }
       />
     );
   }
