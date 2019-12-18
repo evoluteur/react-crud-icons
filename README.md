@@ -6,7 +6,7 @@ React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) a
 
 ### 45 SVG Icons
 
-A minimal set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
+A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
 Names: account, add, alert, apps, bars, browse, cards, check, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, stats, treemap, undo, up, up2, upload.
 
