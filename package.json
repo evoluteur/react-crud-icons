@@ -39,6 +39,7 @@
     "CRUD",
     "web",
     "ui",
-    "toolbar"
+    "toolbar",
+    "tooltip"
   ]
 }
