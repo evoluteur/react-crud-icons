@@ -1,16 +1,16 @@
-# React-CRUD-Icons &middot; [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/evoluteur/react-crud-icons/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react-crud-icons)](https://www.npmjs.com/package/react-crud-icons) 
+# React-CRUD-Icons &middot; [![GitHub license](https://img.shields.io/github/license/evoluteur/react-crud-icons)](https://github.com/evoluteur/react-crud-icons/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react-crud-icons)](https://www.npmjs.com/package/react-crud-icons) 
 
 
-React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with [light & dark themes](#themes), tooltip.
+React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with [light & dark themes](#themes) and tooltip.
 
 
 ### 45 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
-Names: account, add, alert, apps, bars, browse, cards, check, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, stats, treemap, undo, up, up2, upload.
-
 ![Screenshot](screenshots/icons.png)
+
+Names: account, add, alert, apps, bars, browse, cards, check, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, stats, treemap, undo, up, up2, upload.
 
 <a name="themes"></a>
 ### 2 Themes
