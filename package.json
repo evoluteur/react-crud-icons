@@ -1,12 +1,12 @@
 {
   "name": "react-crud-icons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Set of SVG icons for CRUD applications packaged as a React component",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/react-crud-icons.git"
   },
-  "copyright": "(c) 2019 Olivier Giulieri",
+  "copyright": "(c) 2020 Olivier Giulieri",
   "homepage": "https://github.com/evoluteur/react-crud-icons",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
@@ -21,13 +21,13 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "node-sass": "^4.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "node-sass": "^4.14.1"
   },
   "keywords": [
     "SVG",
