@@ -101,8 +101,17 @@ export default function Icon(args) {
   if(theme==='none'){
     return svgCmp(path, onClick)
   }else{
-    const css = "crud-icon "+size+' '+args.className+' '+theme+(!!disabled ? ' disabled' : '')
-    return <i data-id={ id || name } className={css} onClick={onClick ? onClick : null}>
+    const props = {
+      className: "crud-icon "+size+' '+args.className+' '+theme+(!!disabled ? ' disabled' : ''),
+      'data-id': id || name,
+    }
+    if(id){
+      props.id = id
+    }
+    if(onClick){
+      props.onClick = onClick
+    }
+    return <i {...props} >
         { svgCmp(path) }
         {tooltip ? (
           <div>{ tooltip }</div>

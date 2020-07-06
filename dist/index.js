@@ -113,12 +113,20 @@ function Icon(args) {
   if (theme === 'none') {
     return svgCmp(path, onClick);
   } else {
-    var css = "crud-icon " + size + ' ' + args.className + ' ' + theme + (!!disabled ? ' disabled' : '');
-    return _react["default"].createElement("i", {
-      "data-id": id || name,
-      className: css,
-      onClick: onClick ? onClick : null
-    }, svgCmp(path), tooltip ? _react["default"].createElement("div", null, tooltip) : null);
+    var props = {
+      className: "crud-icon " + size + ' ' + args.className + ' ' + theme + (!!disabled ? ' disabled' : ''),
+      'data-id': id || name
+    };
+
+    if (id) {
+      props.id = id;
+    }
+
+    if (onClick) {
+      props.onClick = onClick;
+    }
+
+    return _react["default"].createElement("i", props, svgCmp(path), tooltip ? _react["default"].createElement("div", null, tooltip) : null);
   }
 }
 
