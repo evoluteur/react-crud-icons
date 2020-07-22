@@ -7,7 +7,7 @@
     "url": "git://github.com/evoluteur/react-crud-icons.git"
   },
   "copyright": "(c) 2020 Olivier Giulieri",
-  "homepage": "https://github.com/evoluteur/react-crud-icons",
+  "homepage": "https://evoluteur.github.io/react-crud-icons",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
   "main": "dist/index.js",
