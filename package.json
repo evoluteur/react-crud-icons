@@ -1,6 +1,6 @@
 {
   "name": "react-crud-icons",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Set of SVG icons for CRUD applications packaged as a React component",
   "repository": {
     "type": "git",

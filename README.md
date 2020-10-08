@@ -4,20 +4,20 @@
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with light & dark themes and tooltip.
 
 
-### 45 SVG Icons
+### 48 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
-![Screenshot](screenshots/icons.png)
+![Screenshot](screenshots/icons.gif)
 
-Names: account, add, alert, apps, bars, browse, cards, check, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, sort, stats, treemap, undo, up, up2, upload.
+Names: account, add, add2, alert, apps, bars, browse, cards, check, close, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, sort, stats, treemap, undo, up, up2, upload.
 
 <a name="themes"></a>
 ### 2 Themes
 
 Themes: light, dark.
 
-![Screenshot](screenshots/hover.png)
+![Screenshot](screenshots/hover.gif)
 
 To disable the icon hover effect, set theme = "none".
 
@@ -26,7 +26,7 @@ To disable the icon hover effect, set theme = "none".
 
 Sizes: tiny, small, medium, large, big, huge.
 
-![Screenshot](screenshots/sizes.png)
+![Screenshot](screenshots/sizes.gif)
 
 
 ## Installation
