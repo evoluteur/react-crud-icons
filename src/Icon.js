@@ -123,10 +123,9 @@ export default function Icon(args) {
 }
 
 Icon.propTypes = {
-	name: PropTypes.oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
-  //name: PropTypes.string.isRequired,
-  size: PropTypes.string,
-  theme: PropTypes.string, // 'light' or 'dark'
+  name: PropTypes.oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "close", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "sort", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'big', 'huge']),
+  theme: PropTypes.oneOf(['light', 'dark']),
   tooltip: PropTypes.string,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
