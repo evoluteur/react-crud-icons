@@ -22,10 +22,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 (_)___|_|_\\___/|___/ 
 | / _/ _ \ ' \(_-<
 |_\__\___/_||_/__/
-  React-CRUD-Icons
-  Minimal set of SVG icons for CRUD apps, packaged as a React component for Web UI.
-  https://github.com/evoluteur/react-crud-icons
- (c) 2019 Olivier Giulieri
+
+ React-CRUD-Icons
+
+ Set of SVG icons for CRUD apps, packaged as a React component for Web UI.
+
+ https://github.com/evoluteur/react-crud-icons
+ (c) 2020 Olivier Giulieri
  
 */
 //import './Icon.scss'
@@ -125,8 +128,15 @@ function Icon(args) {
       props.id = id;
     }
 
-    if (onClick) {
+    if (onClick && !disabled) {
+      props.tabIndex = 0;
       props.onClick = onClick;
+
+      props.onKeyUp = function (evt) {
+        if (evt.keyCode === 13) {
+          onClick(evt);
+        }
+      };
     }
 
     return /*#__PURE__*/_react["default"].createElement("i", props, svgCmp(path), tooltip ? /*#__PURE__*/_react["default"].createElement("div", null, tooltip) : null);
@@ -134,11 +144,9 @@ function Icon(args) {
 }
 
 Icon.propTypes = {
-  name: _propTypes["default"].oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
-  //name: PropTypes.string.isRequired,
-  size: _propTypes["default"].string,
-  theme: _propTypes["default"].string,
-  // 'light' or 'dark'
+  name: _propTypes["default"].oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "cards", "check", "close", "collapse", "comment", "comments", "compare", "dashboard", "delete", "dots", "dots-v", "down", "down2", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "import", "info", "json", "list", "paperclip", "pie", "remove", "save", "search", "settings", "show", "sort", "stats", "treemap", "undo", "up", "up2", "upload"]).isRequired,
+  size: _propTypes["default"].oneOf(['tiny', 'small', 'medium', 'large', 'big', 'huge']),
+  theme: _propTypes["default"].oneOf(['light', 'dark']),
   tooltip: _propTypes["default"].string,
   disabled: _propTypes["default"].bool,
   onClick: _propTypes["default"].func

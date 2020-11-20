@@ -72,6 +72,8 @@ class Example extends React.Component {
 }
 ```
 
+Note: Icons only take focus on tab when the "onClick" property is set and they are not disabled.
+
 ## License
 
 Copyright (c) 2020 [Olivier Giulieri](https://evoluteur.github.io/).
