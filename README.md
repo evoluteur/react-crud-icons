@@ -8,9 +8,9 @@ React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) a
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
-![Screenshot](screenshots/icons.gif)
+![Screenshot](screenshots/react-crud-icons.gif)
 
-Names: account, add, add2, alert, apps, bars, browse, cards, check, close, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, sort, stats, treemap, undo, up, up2, upload.
+Icon keys: account, add, add2, alert, apps, bars, browse, cards, check, close, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, sort, stats, treemap, undo, up, up2, upload.
 
 <a name="themes"></a>
 ### 2 Themes
@@ -39,6 +39,16 @@ npm install react-crud-icons --save
 
 You’ll need to install React and PropTypes separately since those dependencies aren't included in the package. 
 
+To rebuild the project:
+
+
+```
+npm install
+npm run build
+```
+
+## Usage
+
 Below is a simple example of how to use the component in a React view. You will also need to include the CSS file from this package (or provide your own). The example below shows how to include the CSS from this package if your build system supports requiring CSS files (Webpack is one that does).
 
 ```js
@@ -61,7 +71,6 @@ class Example extends React.Component {
   }
 }
 ```
-
 
 ## License
 
