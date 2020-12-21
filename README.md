@@ -3,7 +3,6 @@
 
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with light & dark themes and tooltip.
 
-
 ### 48 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
@@ -72,7 +71,10 @@ class Example extends React.Component {
 }
 ```
 
-Note: Icons only take focus on tab when the "onClick" property is set and they are not disabled.
+Notes: 
+
+* Icons only take focus on tab when the "onClick" property is set and they are not disabled.
+* The component uses inline SVG for faster display.
 
 ## License
 
