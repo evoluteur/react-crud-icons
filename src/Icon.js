@@ -97,8 +97,8 @@ const svgPaths = {
 
   up: "M7,15L12,10L17,15H7Z",
   down: "M7,10L12,15L17,10H7Z",
-  up2: "M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z",
-  down2: "M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z",
+  "chevron-up": "M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z",
+  "chevron-down": "M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z",
   expand:
     "M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z",
   collapse:
@@ -195,6 +195,8 @@ Icon.propTypes = {
     "calendar",
     "cards",
     "check",
+    "chevron-down",
+    "chevron-up",
     "close",
     "collapse",
     "comment",
@@ -207,7 +209,6 @@ Icon.propTypes = {
     "dots",
     "dots-v",
     "down",
-    "down2",
     "download",
     "drag",
     "edit",
@@ -239,7 +240,6 @@ Icon.propTypes = {
     "treemap",
     "undo",
     "up",
-    "up2",
     "upload",
   ]).isRequired,
   size: PropTypes.oneOf([
