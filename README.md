@@ -9,9 +9,10 @@ A set of icons for CRUD applications... hand-picked among thousands at [Material
 
 ![Screenshot](screenshots/react-crud-icons.gif)
 
-Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, image, import, info, json, list, list-bulletted, lock, lock-open, map-marker, paperclip, pie, print, remove, save, search, settings, show, sort, stats, treemap, undo, up, upload.
+Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, image, import, info, json, list, list-bulleted, lock, lock-open, map-marker, paperclip, pie, print, remove, save, search, settings, show, sort, stats, treemap, undo, up, upload.
 
 <a name="themes"></a>
+
 ### 2 Themes
 
 Themes: light, dark.

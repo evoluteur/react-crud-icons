@@ -1,11 +1,11 @@
 /*
-  ___             _   
- | _ \___ __ _ __| |_ 
+  ___             _
+ | _ \___ __ _ __| |_
  |   / -_) _` / _|  _|
  |_|_\___\__,_\__|\__|
-  / __| _ \ | | |   \ 
+  / __| _ \ | | |   \
  | (__|   / |_| | |) |
-(_)___|_|_\\___/|___/ 
+(_)___|_|_\\___/|___/
 | / _/ _ \ ' \(_-<
 |_\__\___/_||_/__/
 
@@ -46,7 +46,7 @@ const svgPaths = {
   filter: "M6,13H18V11H6M3,6V8H21V6M10,18H14V16H10V18Z",
   sort: "M19 17H22L18 21L14 17H17V3H19M2 17H12V19H2M6 5V7H2V5M2 11H9V13H2V11Z",
   list: "M3,4H21V8H3V4M3,10H21V14H3V10M3,16H21V20H3V16Z",
-  "list-bulletted":
+  "list-bulleted":
     "M3,4H7V8H3V4M9,5V7H21V5H9M3,10H7V14H3V10M9,11V13H21V11H9M3,16H7V20H3V16M9,17V19H21V17H9",
   //list4: 'M3,15H21V13H3V15M3,19H21V17H3V19M3,11H21V9H3V11M3,5V7H21V5H3Z',
   //cols: 'M4,21V3H8V21H4M10,21V3H14V21H10M16,21V3H20V21H16Z',
@@ -223,7 +223,7 @@ Icon.propTypes = {
     "info",
     "json",
     "list",
-    "list-bulletted",
+    "list-bulleted",
     "lock",
     "clock-open",
     "map-marker",
