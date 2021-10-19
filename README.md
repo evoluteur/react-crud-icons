@@ -3,13 +3,13 @@
 
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with light & dark themes and tooltip.
 
-### 48 SVG Icons
+### 57 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
 ![Screenshot](screenshots/react-crud-icons.gif)
 
-Icon keys: account, add, add2, alert, apps, bars, browse, cards, check, close, collapse, comment, comments, compare, dashboard, delete, dots, dots-v, down, down2, download, drag, edit, error, expand, export, favorite, filter, help, hide, import, info, json, list, paperclip, pie, remove, save, search, settings, show, sort, stats, treemap, undo, up, up2, upload.
+Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, image, import, info, json, list, list-bulletted, lock, lock-open, map-marker, paperclip, pie, print, remove, save, search, settings, show, sort, stats, treemap, undo, up, upload.
 
 <a name="themes"></a>
 ### 2 Themes
@@ -78,9 +78,9 @@ Notes:
 
 ## License
 
-Copyright (c) 2020 [Olivier Giulieri](https://evoluteur.github.io/).
+Copyright (c) 2021 [Olivier Giulieri](https://evoluteur.github.io/).
 
-react-crud-icons is released under the [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
+React-CRUD-Icons is Open Source wih [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
 
 To suggest a feature or report a bug: [https://github.com/evoluteur/react-crud-icons/issues](https://github.com/evoluteur/react-crud-icons/issues)
  
