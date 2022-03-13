@@ -28,7 +28,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
  Set of SVG icons for CRUD apps, packaged as a React component for Web UI.
 
  https://github.com/evoluteur/react-crud-icons
- (c) 2021 Olivier Giulieri
+ (c) 2022 Olivier Giulieri
 
 */
 //import './Icon.scss'

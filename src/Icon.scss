@@ -1,7 +1,7 @@
 /*
     React-CRUD-Icons
     https://github.com/evoluteur/react-crud-icons
-    (c) 2021 Olivier Giulieri
+    (c) 2022 Olivier Giulieri
 */
 
 .crud-icon {
@@ -11,14 +11,14 @@
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  &.disabled{
+  &.disabled {
     cursor: default;
   }
-  >svg{
+  > svg {
     position: relative;
     top: -1px;
   }
-  > div{
+  > div {
     z-index: 300;
     visibility: hidden;
     opacity: 0;
@@ -32,16 +32,16 @@
     font-size: 12px;
     font-style: normal;
   }
-  &:hover{
-    transition: background-color .2s linear .1s;
-    > div{
+  &:hover {
+    transition: background-color 0.2s linear 0.1s;
+    > div {
       opacity: 1;
       visibility: visible;
-      transition: opacity .3s linear .3s, visibility 0s linear .3s;
+      transition: opacity 0.3s linear 0.3s, visibility 0s linear 0.3s;
     }
   }
-  &.dark{
-    &.disabled{
+  &.dark {
+    &.disabled {
       > svg {
         fill: silver;
       }
@@ -49,15 +49,15 @@
     > svg {
       fill: #fafafa;
     }
-    &:hover:not(.disabled){
+    &:hover:not(.disabled) {
       background-color: #616161; // #424242;
       > svg {
         fill: white;
       }
     }
   }
-  &.light{
-    &.disabled{
+  &.light {
+    &.disabled {
       > svg {
         fill: silver;
       }
@@ -65,12 +65,12 @@
     > svg {
       fill: #424242;
     }
-    &:hover:not(.disabled){
+    &:hover:not(.disabled) {
       background-color: #eeeeee;
       > svg {
         fill: black;
       }
-      > div{
+      > div {
         visibility: visible;
       }
     }
@@ -79,59 +79,59 @@
     height: $heightAndWidth;
     width: $heightAndWidth;
   }
-  &.tiny{
+  &.tiny {
     @include square(28px);
     padding: 8px;
-    > svg{
+    > svg {
       @include square(12px);
       top: -4px;
     }
-    >div{
+    > div {
       top: 30px;
     }
-  } 
-  &.small{
+  }
+  &.small {
     @include square(38px);
-    > svg{
+    > svg {
       @include square(18px);
     }
-    >div{
+    > div {
       top: 40px;
     }
-  } 
-  &.medium{
+  }
+  &.medium {
     @include square(46px);
-    > svg{
+    > svg {
       @include square(26px);
     }
-    >div{
+    > div {
       top: 46px;
     }
   }
-  &.large{
+  &.large {
     @include square(62px);
-    > svg{
+    > svg {
       @include square(42px);
     }
-    >div{
+    > div {
       top: 60px;
     }
   }
-  &.big{
+  &.big {
     @include square(100px);
-    > svg{
+    > svg {
       @include square(80px);
     }
-    >div{
+    > div {
       top: 94px;
     }
   }
-  &.huge{
+  &.huge {
     @include square(140px);
-    > svg{
+    > svg {
       @include square(120px);
     }
-    >div{
+    > div {
       top: 138px;
       left: 10px;
     }
