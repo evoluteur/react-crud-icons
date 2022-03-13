@@ -18,16 +18,16 @@
     "build-css": "node-sass --include-path src src/Icon.scss dist/css/react-crud-icons.css"
   },
   "dependencies": {
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "node-sass": "^5.0.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "node-sass": "^7.0.1"
   },
   "keywords": [
     "SVG",
