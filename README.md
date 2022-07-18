@@ -51,21 +51,17 @@ Below is a simple example of how to use the component in a React view. You will 
 import React from "react";
 import Icon from "react-crud-icons";
 
-import "../node_modules/react-crud-icons/dist/react-crud-icons.css";
+import "react-crud-icons/dist/react-crud-icons.css";
 
-class Example extends React.Component {
-  render() {
-    return (
-      <Icon
-        name="edit"
-        tooltip="Edit"
-        theme="light"
-        size="medium"
-        onClick={doSomething}
-      />
-    );
-  }
-}
+const Example = () => (
+  <Icon
+    name="edit"
+    tooltip="Edit"
+    theme="light"
+    size="medium"
+    onClick={doSomething}
+  />
+); 
 ```
 
 Notes:
