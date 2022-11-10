@@ -2,13 +2,13 @@
 
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with light & dark themes and tooltip.
 
-### 57 SVG Icons
+### 61 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
 ![Screenshot](screenshots/react-crud-icons.gif)
 
-Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, image, import, info, json, list, list-bulleted, lock, lock-open, map-marker, paperclip, pie, print, remove, save, search, settings, show, sort, stats, treemap, undo, up, upload.
+Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, history, image, import, info, json, list, list-bulleted, lock, lock-open, map-marker, moon, paperclip, pie, print, remove, save, search, settings, show, sort, stats, sun, treemap, undo, up, upload, wand.
 
 <a name="themes"></a>
 
@@ -53,7 +53,7 @@ import Icon from "react-crud-icons";
 
 import "react-crud-icons/dist/react-crud-icons.css";
 
-const Example = () => (
+const ExampleComponent = () => (
   <Icon
     name="edit"
     tooltip="Edit"
@@ -61,7 +61,7 @@ const Example = () => (
     size="medium"
     onClick={doSomething}
   />
-); 
+);
 ```
 
 Notes:
