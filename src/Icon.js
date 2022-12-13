@@ -27,6 +27,7 @@ import PropTypes from "prop-types";
 // The code is partially based on https://medium.com/recraftrelic/building-a-react-component-as-a-npm-module-18308d4ccde9
 
 const svgPaths = {
+  home: "M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z",
   apps: "M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z",
   edit: "M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29",
   browse:
@@ -224,6 +225,7 @@ Icon.propTypes = {
     "help",
     "hide",
     "history",
+    "home",
     "import",
     "info",
     "json",

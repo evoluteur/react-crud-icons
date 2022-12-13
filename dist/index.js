@@ -35,6 +35,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 // The SVG icons are hand-picked among thousands from https://materialdesignicons.com/
 // The code is partially based on https://medium.com/recraftrelic/building-a-react-component-as-a-npm-module-18308d4ccde9
 var svgPaths = {
+  home: "M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z",
   apps: "M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z",
   edit: "M16.84,2.73C16.45,2.73 16.07,2.88 15.77,3.17L13.65,5.29L18.95,10.6L21.07,8.5C21.67,7.89 21.67,6.94 21.07,6.36L17.9,3.17C17.6,2.88 17.22,2.73 16.84,2.73M12.94,6L4.84,14.11L7.4,14.39L7.58,16.68L9.86,16.85L10.15,19.41L18.25,11.3M4.25,15.04L2.5,21.73L9.2,19.94L8.96,17.78L6.65,17.61L6.47,15.29",
   browse: "M12,9C10.34,9 9,10.34 9,12C9,13.66 10.34,15 12,15C13.66,15 15,13.66 15,12C15,10.34 13.66,9 12,9M12,17C9.24,17 7,14.76 7,12C7,9.24 9.24,7 12,7C14.76,7 17,9.24 17,12C17,14.76 14.76,17 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z",
@@ -159,7 +160,7 @@ function Icon(args) {
 }
 
 Icon.propTypes = {
-  name: _propTypes["default"].oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "calendar", "cards", "check", "chevron-down", "chevron-up", "close", "collapse", "comment", "comments", "compare", "copy", "clone", "dashboard", "delete", "dots", "dots-v", "down", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "history", "import", "info", "json", "list", "list-bulleted", "lock", "clock-open", "map-marker", "moon", "paperclip", "pie", "print", "remove", "save", "search", "settings", "show", "sort", "stats", "sun", "treemap", "undo", "up", "upload", "wand"]).isRequired,
+  name: _propTypes["default"].oneOf(["account", "add", "add2", "alert", "apps", "bars", "browse", "calendar", "cards", "check", "chevron-down", "chevron-up", "close", "collapse", "comment", "comments", "compare", "copy", "clone", "dashboard", "delete", "dots", "dots-v", "down", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "history", "home", "import", "info", "json", "list", "list-bulleted", "lock", "clock-open", "map-marker", "moon", "paperclip", "pie", "print", "remove", "save", "search", "settings", "show", "sort", "stats", "sun", "treemap", "undo", "up", "upload", "wand"]).isRequired,
   size: _propTypes["default"].oneOf(["tiny", "small", "medium", "large", "big", "huge", "none"]),
   theme: _propTypes["default"].oneOf(["light", "dark", "none"]),
   tooltip: _propTypes["default"].string,
