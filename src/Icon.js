@@ -130,7 +130,7 @@ const svgPaths = {
   wand: "M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z",
 };
 
-export const keys = Object.keys(svgPaths);
+export const keys = Object.keys(svgPaths).sort();
 
 const svgCmp = (path, onClick, css) => (
   <svg
@@ -145,8 +145,16 @@ const svgCmp = (path, onClick, css) => (
   </svg>
 );
 
-export default function Icon(args) {
-  const { id, name, size, theme, tooltip, disabled, onClick, className } = args;
+export default function Icon({
+  id,
+  name,
+  size,
+  theme,
+  tooltip,
+  disabled,
+  onClick,
+  className,
+}) {
   const path = svgPaths[name] || null;
 
   if (!path) {
@@ -160,7 +168,7 @@ export default function Icon(args) {
         "crud-icon " +
         size +
         " " +
-        args.className +
+        className +
         " " +
         theme +
         (!!disabled ? " disabled" : ""),
@@ -189,86 +197,25 @@ export default function Icon(args) {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf([
-    "account",
-    "add",
-    "add2",
-    "alert",
-    "apps",
-    "bars",
-    "browse",
-    "calendar",
-    "cards",
-    "check",
-    "chevron-down",
-    "chevron-up",
-    "close",
-    "collapse",
-    "comment",
-    "comments",
-    "compare",
-    "copy",
-    "clone",
-    "dashboard",
-    "delete",
-    "dots",
-    "dots-v",
-    "down",
-    "download",
-    "drag",
-    "edit",
-    "error",
-    "expand",
-    "export",
-    "favorite",
-    "filter",
-    "help",
-    "hide",
-    "history",
-    "home",
-    "import",
-    "info",
-    "json",
-    "list",
-    "list-bulleted",
-    "lock",
-    "clock-open",
-    "map-marker",
-    "moon",
-    "paperclip",
-    "pie",
-    "print",
-    "remove",
-    "save",
-    "search",
-    "settings",
-    "show",
-    "sort",
-    "stats",
-    "sun",
-    "treemap",
-    "undo",
-    "up",
-    "upload",
-    "wand",
-  ]).isRequired,
-  size: PropTypes.oneOf([
-    "tiny",
-    "small",
-    "medium",
-    "large",
-    "big",
-    "huge",
-    "none",
-  ]),
-  theme: PropTypes.oneOf(["light", "dark", "none"]),
+  /** Name of the icon (i.e. "home") */
+  name: PropTypes.oneOf(keys).isRequired,
+  /** Icon size (i.e. "medium") */
+  size: PropTypes.oneOf(["tiny", "small", "medium", "large", "big", "huge"]),
+  /** Light or dark theme */
+  theme: PropTypes.oneOf(["light", "dark"]),
+  /** Tooltip on hover */
   tooltip: PropTypes.string,
+  /** Disable click event (icon in grey) */
   disabled: PropTypes.bool,
+  /** Callback function triggered when icon is clicked */
   onClick: PropTypes.func,
+  /** Extra CSS class */
+  className: PropTypes.string,
 };
 
 Icon.defaultProps = {
   size: "medium",
   theme: "light",
   disabled: false,
+  className: null,
 };
