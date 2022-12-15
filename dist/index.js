@@ -120,15 +120,15 @@ var svgCmp = function svgCmp(path, onClick, css) {
   }));
 };
 
-function Icon(args) {
-  var id = args.id,
-      name = args.name,
-      size = args.size,
-      theme = args.theme,
-      tooltip = args.tooltip,
-      disabled = args.disabled,
-      onClick = args.onClick,
-      className = args.className;
+function Icon(_ref) {
+  var id = _ref.id,
+      name = _ref.name,
+      size = _ref.size,
+      theme = _ref.theme,
+      tooltip = _ref.tooltip,
+      disabled = _ref.disabled,
+      onClick = _ref.onClick,
+      className = _ref.className;
   var path = svgPaths[name] || null;
 
   if (!path) {
@@ -139,7 +139,7 @@ function Icon(args) {
     return svgCmp(path, onClick, className);
   } else {
     var props = {
-      className: "crud-icon " + size + " " + args.className + " " + theme + (!!disabled ? " disabled" : ""),
+      className: "crud-icon " + size + " " + className + " " + theme + (!!disabled ? " disabled" : ""),
       "data-id": id || name
     };
 
@@ -166,7 +166,7 @@ Icon.propTypes = {
   /** Name of the icon (i.e. "home") */
   name: _propTypes["default"].oneOf(keys).isRequired,
 
-  /** Name of the icon (i.e. "medium") */
+  /** Icon size (i.e. "medium") */
   size: _propTypes["default"].oneOf(["tiny", "small", "medium", "large", "big", "huge"]),
 
   /** Light or dark theme */
@@ -179,10 +179,14 @@ Icon.propTypes = {
   disabled: _propTypes["default"].bool,
 
   /** Callback function triggered when icon is clicked */
-  onClick: _propTypes["default"].func
+  onClick: _propTypes["default"].func,
+
+  /** Extra CSS class */
+  className: _propTypes["default"].string
 };
 Icon.defaultProps = {
   size: "medium",
   theme: "light",
-  disabled: false
+  disabled: false,
+  className: null
 };

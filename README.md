@@ -2,13 +2,11 @@
 
 React-CRUD-Icons is a set of SVG icons for CRUD (Create, Read, Update, Delete) apps, implemented as a React component with light & dark themes and tooltip.
 
-### 62 SVG Icons
+### 65 SVG Icons
 
 A set of icons for CRUD applications... hand-picked among thousands at [Material Design Icons](https://materialdesignicons.com/).
 
 ![Screenshot](screenshots/react-crud-icons.png)
-
-Icon keys: account, add, add2, alert, apps, bars, browse, calendar, cards, check, chevron-down, chevron-up, clone, close, collapse, comment, comments, compare, copy, dashboard, delete, dots, dots-v, down, download, drag, edit, error, expand, export, favorite, filter, help, hide, history, home, image, import, info, json, list, list-bulleted, lock, lock-open, map-marker, moon, paperclip, pie, print, remove, save, search, settings, show, sort, stats, sun, treemap, undo, up, upload, wand.
 
 <a name="themes"></a>
 
@@ -68,6 +66,19 @@ Notes:
 
 - Icons only take focus on tab when the "onClick" property is set and they are not disabled.
 - The component uses inline SVG for faster display.
+
+## Properties
+
+| Prop     | Description              |
+|------------|-----------------------------|
+| name | Possible values: "account", "add", "add2", "alert", "apps", "arrow-left", "arrow-right", "bars", "browse", "calendar", "cards", "check", "chevron-down", "chevron-up", "clone", "close", "collapse", "comment", "comments", "compare", "copy", "dashboard", "delete", "dots", "dots-v", "down", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "history", "home", "home-circle", "image", "import", "info", "json", "list", "list-bulleted", "lock", "lock-open", "map-marker", "moon", "paperclip", "pie", "print", "remove", "save", "search", "settings", "show", "sort", "stats", "sun", "treemap", "undo", "up", "upload", "wand". |
+| size | Possible values: "tiny", "small", "medium", "large", "big", "huge". |
+| theme | Possible values: "light", "dark". |
+| tooltip | Icon tooltip shown on hover. |
+| disabled | Disable click event (icon in grey). |
+| onClick | Callback function triggered when icon is clicked. If empty, there will be no hover effect on the icon. |
+| className | Additional CSS class name. |
+
 
 ## License
 
