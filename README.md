@@ -16,7 +16,7 @@ Themes: light, dark.
 
 ![Screenshot](screenshots/hover.gif)
 
-To disable the icon hover effect, set theme = "none".
+To disable the icon hover effect, set theme = "none". It will only render the SVG without CSS classes.
 
 ### 6 Sizes
 
@@ -82,7 +82,7 @@ Notes:
 
 ## License
 
-Copyright (c) 2022 [Olivier Giulieri](https://evoluteur.github.io/).
+Copyright (c) 2023 [Olivier Giulieri](https://evoluteur.github.io/).
 
 React-CRUD-Icons is Open Source wih [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
 

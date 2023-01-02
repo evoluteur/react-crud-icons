@@ -1,12 +1,12 @@
 {
   "name": "react-crud-icons",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Set of SVG icons for CRUD applications packaged as a React component",
   "repository": {
     "type": "git",
     "url": "git://github.com/evoluteur/react-crud-icons.git"
   },
-  "copyright": "(c) 2022 Olivier Giulieri",
+  "copyright": "(c) 2023 Olivier Giulieri",
   "homepage": "https://evoluteur.github.io/react-crud-icons",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
@@ -39,7 +39,6 @@
     "component",
     "ui",
     "toolbar",
-    "material",
-    "web"
+    "material"
   ]
 }

@@ -5,13 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = Icon;
 exports.keys = void 0;
-
 var _react = _interopRequireDefault(require("react"));
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 /*
   ___             _
  | _ \___ __ _ __| |_
@@ -28,12 +24,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
  Set of SVG icons for CRUD apps, packaged as a React component for Web UI.
 
  https://github.com/evoluteur/react-crud-icons
- (c) 2022 Olivier Giulieri
+ (c) 2023 Olivier Giulieri
 
 */
+
 //import './Icon.scss'
+
 // The SVG icons are hand-picked among thousands from https://materialdesignicons.com/
 // The code is partially based on https://medium.com/recraftrelic/building-a-react-component-as-a-npm-module-18308d4ccde9
+
 var svgPaths = {
   "arrow-left": "M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z",
   "arrow-right": "M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z",
@@ -106,7 +105,6 @@ var svgPaths = {
 };
 var keys = Object.keys(svgPaths).sort();
 exports.keys = keys;
-
 var svgCmp = function svgCmp(path, onClick, css) {
   return /*#__PURE__*/_react["default"].createElement("svg", {
     className: css,
@@ -119,22 +117,19 @@ var svgCmp = function svgCmp(path, onClick, css) {
     d: path
   }));
 };
-
 function Icon(_ref) {
   var id = _ref.id,
-      name = _ref.name,
-      size = _ref.size,
-      theme = _ref.theme,
-      tooltip = _ref.tooltip,
-      disabled = _ref.disabled,
-      onClick = _ref.onClick,
-      className = _ref.className;
+    name = _ref.name,
+    size = _ref.size,
+    theme = _ref.theme,
+    tooltip = _ref.tooltip,
+    disabled = _ref.disabled,
+    onClick = _ref.onClick,
+    className = _ref.className;
   var path = svgPaths[name] || null;
-
   if (!path) {
     console.error('Invalid icon name "' + name + '".');
   }
-
   if (theme === "none") {
     return svgCmp(path, onClick, className);
   } else {
@@ -142,45 +137,34 @@ function Icon(_ref) {
       className: "crud-icon " + size + " " + className + " " + theme + (!!disabled ? " disabled" : ""),
       "data-id": id || name
     };
-
     if (id) {
       props.id = id;
     }
-
     if (onClick && !disabled) {
       props.tabIndex = 0;
       props.onClick = onClick;
-
       props.onKeyUp = function (evt) {
         if (evt.keyCode === 13) {
           onClick(evt);
         }
       };
     }
-
     return /*#__PURE__*/_react["default"].createElement("i", props, svgCmp(path), tooltip ? /*#__PURE__*/_react["default"].createElement("div", null, tooltip) : null);
   }
 }
-
 Icon.propTypes = {
   /** Name of the icon (i.e. "home") */
   name: _propTypes["default"].oneOf(keys).isRequired,
-
   /** Icon size (i.e. "medium") */
   size: _propTypes["default"].oneOf(["tiny", "small", "medium", "large", "big", "huge"]),
-
   /** Light or dark theme */
-  theme: _propTypes["default"].oneOf(["light", "dark"]),
-
+  theme: _propTypes["default"].oneOf(["light", "dark", "none"]),
   /** Tooltip on hover */
   tooltip: _propTypes["default"].string,
-
   /** Disable click event (icon in grey) */
   disabled: _propTypes["default"].bool,
-
   /** Callback function triggered when icon is clicked */
   onClick: _propTypes["default"].func,
-
   /** Extra CSS class */
   className: _propTypes["default"].string
 };

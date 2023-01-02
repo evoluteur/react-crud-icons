@@ -14,7 +14,7 @@
  Set of SVG icons for CRUD apps, packaged as a React component for Web UI.
 
  https://github.com/evoluteur/react-crud-icons
- (c) 2022 Olivier Giulieri
+ (c) 2023 Olivier Giulieri
 
 */
 
@@ -208,7 +208,7 @@ Icon.propTypes = {
   /** Icon size (i.e. "medium") */
   size: PropTypes.oneOf(["tiny", "small", "medium", "large", "big", "huge"]),
   /** Light or dark theme */
-  theme: PropTypes.oneOf(["light", "dark"]),
+  theme: PropTypes.oneOf(["light", "dark", "none"]),
   /** Tooltip on hover */
   tooltip: PropTypes.string,
   /** Disable click event (icon in grey) */
