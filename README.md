@@ -73,7 +73,7 @@ Notes:
 |------------|-----------------------------|
 | name | Possible values: "account", "add", "add2", "alert", "apps", "arrow-left", "arrow-right", "bars", "browse", "calendar", "cards", "check", "chevron-down", "chevron-up", "clone", "close", "collapse", "comment", "comments", "compare", "copy", "dashboard", "delete", "dots", "dots-v", "down", "download", "drag", "edit", "error", "expand", "export", "favorite", "filter", "help", "hide", "history", "home", "home-circle", "image", "import", "info", "json", "list", "list-bulleted", "lock", "lock-open", "map-marker", "moon", "paperclip", "pie", "print", "remove", "save", "search", "settings", "show", "sort", "stats", "sun", "treemap", "undo", "up", "upload", "wand". |
 | size | Possible values: "tiny", "small", "medium", "large", "big", "huge". |
-| theme | Possible values: "light", "dark". |
+| theme | Possible values: "light", "dark", or "none". |
 | tooltip | Icon tooltip shown on hover. |
 | disabled | Disable click event (icon in grey). |
 | onClick | Callback function triggered when icon is clicked. If empty, there will be no hover effect on the icon. |
