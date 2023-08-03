@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "BUILD_PATH='../docs' react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
