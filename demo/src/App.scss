@@ -1,0 +1,186 @@
+body {
+  background-image: url(bg0.png);
+  background-repeat: repeat-y;
+}
+
+.icons-notext.dark > span {
+  color: white;
+}
+.icons-notext.dark > span,
+.icons-notext > span {
+  display: inline-block;
+  min-width: 100px;
+  position: relative;
+  top: -7px;
+  left: -8px;
+}
+.App {
+  padding: 20px 30px 20px 60px;
+}
+h1 {
+  margin: 0 0 10px;
+}
+h3 {
+  margin-top: 30px;
+}
+header {
+  padding: 10px 0;
+}
+.codeTab {
+  margin-left: 20px;
+}
+a {
+  color: #39c;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  color: navy;
+}
+
+i {
+  box-sizing: border-box;
+}
+.icons > div,
+.icons-notext > div {
+  display: inline-block;
+  min-width: 70px;
+  > span {
+    position: relative;
+    top: -7px;
+    left: -5px;
+  }
+}
+.icons-notext > div {
+  padding: 5px 10px 0;
+}
+.icons svg,
+.icons-notext svg {
+  position: relative;
+}
+.icons .crud-icon {
+  top: 6px;
+  margin-right: 4px;
+}
+.icons-notext.dark {
+  background-color: black;
+  color: white;
+}
+.icons-notext {
+  border-radius: 10px;
+  padding: 10px 0 20px;
+  i {
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+.sizes {
+  padding: 20px;
+  /* @include flex-holder(); */
+}
+.sizes.dark {
+  background-color: black;
+}
+.sizes > div {
+  display: inline-block;
+}
+.evo-home {
+  background-color: white;
+  .version {
+    font-size: 0.6em;
+    font-weight: 500;
+  }
+}
+code {
+  display: block;
+  margin: 10px 0;
+  padding: 20px 40px 20px 10px;
+  background-color: #fafafa;
+  border: solid 1px silver;
+  font-size: 14px;
+  border-radius: 10px;
+}
+header {
+  position: relative;
+}
+.github {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0 0 10px 30px;
+  font-size: 20px;
+  > svg {
+    fill: black;
+  }
+  &:hover > svg {
+    fill: #39c;
+  }
+}
+.icons-options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  > div {
+    padding: 10px 0;
+    margin-right: 20px;
+    flex-grow: 0;
+  }
+  input.search,
+  select {
+    font-size: 1.2em;
+    padding: 5px;
+    max-width: 140px;
+    border-radius: 2px;
+  }
+}
+table {
+  td {
+    padding: 5px;
+    vertical-align: top;
+  }
+}
+
+// from https://www.w3schools.com/howto/howto_css_placeholder.asp
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: silver;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: silver;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: silver;
+}
+
+// // demo w/ text
+// .icons-notext > div {
+//   width:200px;
+//   padding:0;
+//   .crud-icon{
+//     top:8px;
+//     left: 6px;
+//   }
+// }
+
+.silver-text {
+  color: silver;
+}
+
+.name-on > div {
+  width: 220px;
+  > span > i {
+    top: 6px;
+    left: 5px;
+  }
+}
+.show-names {
+  display: flex;
+  align-items: center;
+  > label > span {
+    padding: 7px 0 0 5px;
+  }
+}

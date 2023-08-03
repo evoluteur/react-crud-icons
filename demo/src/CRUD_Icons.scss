@@ -1,0 +1,47 @@
+.icons,
+.icons-notext {
+  > div {
+    display: inline-block;
+    margin: 10px;
+    width: 140px;
+  }
+  svg {
+    position: relative;
+  }
+}
+.icons {
+  .crud-icon {
+    top: 6px;
+    margin-right: 4px;
+  }
+}
+.icons-notext {
+  padding: 20px;
+  i {
+    display: inline-block;
+    margin: 10px;
+  }
+  &.dark {
+    background-color: black;
+  }
+}
+
+.sizes {
+  padding: 20px;
+  //width: 100%;
+  @include flex-holder();
+  > div {
+    @include flex-item();
+    flex-grow: 0;
+  }
+  &.dark {
+    background-color: black;
+  }
+  > * {
+    display: inline-block;
+    margin-right: 20px;
+    > div {
+      display: block;
+    }
+  }
+}

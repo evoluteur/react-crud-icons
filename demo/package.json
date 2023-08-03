@@ -1,0 +1,46 @@
+{
+  "name": "react-crud-icons-demo",
+  "version": "1.2.3",
+  "description": "React-CRUD-Icons Demo",
+  "license": "MIT",
+  "homepage": "./",
+  "author": "Olivier Giulieri (https://evoluteur.github.io/)",
+  "copyright": "(c) 2023 Olivier Giulieri",
+  "home": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/evoluteur/react-crud-icons.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-crud-icons": "1.2.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
