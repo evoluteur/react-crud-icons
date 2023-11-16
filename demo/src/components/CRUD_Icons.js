@@ -65,6 +65,7 @@ const CRUD_Icons = (
         />
       </div>
     </div>
+
     <h3>Sizes on black</h3>
     <div className="sizes dark">
       {sizes.map((size) => (

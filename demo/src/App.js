@@ -9,6 +9,7 @@ import "react-crud-icons/dist/css/react-crud-icons.css";
 import "./App.scss";
 
 const sizes = ["tiny", "small", "medium", "large", "big", "huge"];
+const noOp = () => {};
 
 function App() {
   const [search, setSearch] = useState(null);
@@ -17,13 +18,13 @@ function App() {
   const [nameVisible, setNameVisible] = useState(false);
 
   const onChangeSize = (evt) => {
-    const ddSize = evt.target.selectedOptions[0].childNodes[0].data;
+    const ddSize = evt.target.selectedOptions[0].value;
     setSize(ddSize.toLowerCase());
   };
 
   const onChangeTheme = (evt) => {
     const t = evt.target;
-    let ddTheme = t.selectedOptions[0].childNodes[0].data;
+    let ddTheme = t.selectedOptions[0].value;
     if (ddTheme.startsWith("none")) {
       ddTheme = "none";
     }
@@ -147,7 +148,13 @@ function App() {
               )}
               {filteredIcons.map((ico) => (
                 <div key={ico}>
-                  <Icon name={ico} tooltip={ico} theme={theme} size={size} />
+                  <Icon
+                    name={ico}
+                    tooltip={ico}
+                    theme={theme}
+                    size={size}
+                    onClick={noOp}
+                  />
                   {nameVisible && <span>{ico}</span>}
                 </div>
               ))}
@@ -253,7 +260,7 @@ function App() {
                 </tr>
                 <tr>
                   <td>disabled</td>
-                  <td>Disable click event (icon in grey).</td>
+                  <td>Disable click event (change icon color to grey).</td>
                 </tr>
                 <tr>
                   <td>onClick</td>
