@@ -196,9 +196,9 @@ export default function Icon({
     }
 
     return (
-      <i {...props}>
+      <i {...props} role={onClick ? "button" : "img"}>
         {svgCmp(path)}
-        {tooltip ? <div>{tooltip}</div> : null}
+        {tooltip ? <div role="tooltip">{tooltip}</div> : null}
       </i>
     );
   }
