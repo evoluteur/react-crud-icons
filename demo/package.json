@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": "./",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
-  "copyright": "(c) 2023 Olivier Giulieri",
+  "copyright": "(c) 2024 Olivier Giulieri",
   "home": "",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "node-sass": "^8.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.8",
+    "prettier": "^3.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^3.4.0",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"

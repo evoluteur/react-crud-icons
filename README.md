@@ -84,7 +84,7 @@ Notes:
 
 ## License
 
-Copyright (c) 2023 [Olivier Giulieri](https://evoluteur.github.io/).
+Copyright (c) 2024 [Olivier Giulieri](https://evoluteur.github.io/).
 
 React-CRUD-Icons is Open Source wih [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
 
