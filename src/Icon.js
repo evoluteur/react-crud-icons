@@ -156,15 +156,15 @@ const svgCmp = (path, onClick, css) => (
 export default function Icon({
   id,
   name,
-  size,
-  theme,
+  size = "medium",
+  theme = "light",
   tooltip,
-  disabled,
+  disabled = false,
   onClick,
-  className,
+  className = null,
+  color,
 }) {
   const path = svgPaths[name] || null;
-
   if (!path) {
     console.error('Invalid icon name "' + name + '".');
   }
@@ -221,9 +221,3 @@ Icon.propTypes = {
   className: PropTypes.string,
 };
 
-Icon.defaultProps = {
-  size: "medium",
-  theme: "light",
-  disabled: false,
-  className: null,
-};
