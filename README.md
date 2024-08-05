@@ -26,6 +26,9 @@ Sizes: tiny, small, medium, large, big, huge.
 
 ![Screenshot](screenshots/sizes.gif)
 
+For really large size icons, checkout the [T-Shirts](https://www.redbubble.com/people/evoluteur/shop?artistUserName=evoluteur&collections=4052365&iaCode=all-departments) ;-)
+
+
 ## Installation
 
 The package can be installed via [npm](https://www.npmjs.com/package/react-crud-icons):
@@ -82,6 +85,13 @@ Notes:
 | className | Additional CSS class name. |
 
 
+## T-Shirts
+
+If you don't have a computer or if your screen is not big enough, I'm also providing [icons on T-Shirts](https://www.redbubble.com/people/evoluteur/shop?artistUserName=evoluteur&collections=4052365&iaCode=all-departments).
+
+[![Screenshot](screenshots/lol.jpg)](https://www.redbubble.com/people/evoluteur/shop?artistUserName=evoluteur&collections=4052365&iaCode=all-departments)
+
+
 ## License
 
 Copyright (c) 2024 [Olivier Giulieri](https://evoluteur.github.io/).
@@ -91,3 +101,4 @@ React-CRUD-Icons is Open Source wih [MIT license](http://github.com/evoluteur/re
 To suggest a feature or report a bug: [https://github.com/evoluteur/react-crud-icons/issues](https://github.com/evoluteur/react-crud-icons/issues)
 
 Notes: React-CRUD-Icons was originaly made for [Evolutility-UI-React](https://github.com/evoluteur/evolutility-ui-react).
+
