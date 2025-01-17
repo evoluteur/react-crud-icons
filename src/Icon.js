@@ -14,7 +14,7 @@
  Set of SVG icons for CRUD apps, packaged as a React component for Web UI.
 
  https://github.com/evoluteur/react-crud-icons
- (c) 2024 Olivier Giulieri
+ (c) 2025 Olivier Giulieri
 
 */
 

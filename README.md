@@ -94,7 +94,7 @@ If you don't have a computer or if your screen is not big enough, I'm also provi
 
 ## License
 
-Copyright (c) 2024 [Olivier Giulieri](https://evoluteur.github.io/).
+Copyright (c) 2025 [Olivier Giulieri](https://evoluteur.github.io/).
 
 React-CRUD-Icons is Open Source wih [MIT license](http://github.com/evoluteur/react-crud-icons/blob/master/LICENSE).
 
